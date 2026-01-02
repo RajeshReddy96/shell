@@ -5,14 +5,14 @@ echo "Error: run with root privilages"
 exit 1
 fi
 #dunctiins lo $ ni use cheyali , $? work avvadu functions lo
-# VALIDATE(){
-#     if [ $1 -ne 0 ]; then
-#     echo "ERROR:: installing $2 is fail"
-#     exit 1
-#     else 
-#     echo "installing $2 is success"
-#     fi
-# }
+VALIDATE(){
+    if [ $1 -ne 0 ]; then
+    echo "ERROR:: installing $2 is fail"
+    exit 1
+    else 
+    echo "installing $2 is success"
+    fi
+}
 
 dnf install mysql -y
 VALIDATE $? "MYSQL"

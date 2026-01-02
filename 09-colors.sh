@@ -5,5 +5,5 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-echo "$R Hello Rajesh $N"
+echo -e "$R Hello Rajesh $N"
 echo "Now chnages the normal color"
