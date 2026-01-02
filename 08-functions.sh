@@ -1,5 +1,5 @@
 #!/bin/bash
-USERID=(id -u)
+USERID=$(id -u)
 if [ $USERID -ne 0 ]; then
 echo "Error: run with root privilages"
 exit 1
@@ -9,6 +9,8 @@ VALIDATE(){
     if [ $1 -ne 0 ]; then
     echo "ERROR:: installing $2 is fail"
     exit 1
+    else 
+    echo "installing $2 is success"
     fi
 }
 
