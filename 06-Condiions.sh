@@ -21,3 +21,6 @@ echo "Given Number $NUM equal"
 else
 echo "Given Number $NUM is greather then 111"
 fi
+
+#Tips
+#conditions lo space kavali and variables ki space undakudadu
